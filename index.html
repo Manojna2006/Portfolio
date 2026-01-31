@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manchikanti Lakshmi Sruthi Manojna | Portfolio</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111827;
+      --card: #f3f4f6;
+      --accent: #6366f1;
+    }
+    body.dark {
+      --bg: #0f172a;
+      --text: #e5e7eb;
+      --card: #1e293b;
+      --accent: #22d3ee;
+    }
+    html { scroll-behavior: smooth; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      transition: background 0.4s, color 0.4s;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      z-index: 10;
+    }
+    header a { text-decoration:none; color:var(--text); font-weight:500; }
+    header h1 span { color: var(--accent); }
+    button {
+      background: var(--accent);
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    section {
+      padding: 80px 10%;
+      animation: fadeUp 1s ease;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .hero h2 { font-size: 2.5rem; }
+    .hero p { margin: 20px 0; line-height: 1.6; }
+    .card {
+      background: var(--card);
+      padding: 25px;
+      border-radius: 20px;
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-8px); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: var(--card);
+    }
+    @media(max-width: 768px) {
+      .hero { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Manojna<span>.</span></h1>
+    <nav style="display:flex; gap:15px; align-items:center;">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      
+      <a href="#education">Education</a>
+      <a href="#profiles">Profiles</a>
+      <a href="#contact">Contact</a>
+      <button onclick="toggleTheme()">🌙</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h2>Manchikanti Lakshmi Sruthi Manojna</h2>
+      <p>AI/ML & Full‑Stack Developer passionate about building scalable web applications and intelligent systems.</p>
+      <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
+        <a href="https://www.linkedin.com/in/lakshmisruthimanojna-manchikanti-83b9b62a5/" target="_blank"><button>LinkedIn</button></a>
+        <a href="https://github.com/Manojna2006" target="_blank"><button>GitHub</button></a>
+        <a href="resume.pdf" target="_blank"><button>Resume</button></a>
+      </div>
+    </div>
+    <div class="card" style="text-align:center;">
+      <img src="profile.jpg" alt="Profile" style="width:150px; height:150px; border-radius:50%; object-fit:cover; margin-bottom:15px;">
+      <p>🎓 B.Tech IT (2023–2027)</p>
+      <p>💻 Java, Python, React, Django</p>
+      <p>👩‍💼 Vice President – Vishnu Psychology Department, SVECW</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>TaxFlow</h3>
+        <p>Django-based secure client document management system.</p>
+        <a href="https://github.com/Manojna2006/Taxflow" target="_blank">GitHub →</a>
+      </div>
+      <div class="card">
+        <h3>Suchika</h3>
+        <p>Flutter + Firebase digital notice board system.</p>
+        <a href="https://github.com/Manojna2006/suchika" target="_blank">GitHub →</a>
+      </div>
+      <div class="card">
+        <h3>TalentAlign AI</h3>
+        <p>AI-powered resume–job matching platform.</p>
+        <a href="https://github.com/Manojna2006/TalentAlignAI" target="_blank">GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">Java</div>
+      <div class="card">Python</div>
+      <div class="card">C</div>
+      <div class="card">JavaScript</div>
+      <div class="card">React</div>
+      <div class="card">Django</div>
+      <div class="card">Flutter</div>
+      <div class="card">MySQL</div>
+      <div class="card">Firebase</div>
+      <div class="card">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>AI/ML & Full‑Stack Intern</h3>
+        <p><b>AptPath (Remote)</b> · Jul 2025 – Aug 2025</p>
+        <p>Contributed to <b>TalentAlign AI</b>, an AI‑powered resume–job matching platform. Built responsive frontend modules using React and JavaScript, optimized backend workflows, and implemented Python‑based ML models for skill–role alignment. Achieved <b>1st Place Award</b> for the best project.</p>
+        <a href="aptpath-certificate.pdf" target="_blank">📜 Internship Certificate</a>
+      </div>
+
+      <div class="card">
+        <h3>AI Intern</h3>
+        <p><b>Infosys Springboard</b></p>
+        <p>Worked on an <b>AI Facial Aging Recognition</b> project focusing on computer vision techniques. Implemented machine learning models to analyze facial features and predict age progression, gaining hands‑on experience with AI/ML concepts and real‑world datasets.</p>
+        <a href="infosys-certificate.pdf" target="_blank">📜 Internship Certificate</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>B.Tech – Information Technology</h3>
+        <p>Shri Vishnu Engineering College for Women, Bhimavaram</p>
+        <p>2023 – 2027 | GPA: <b>8.94</b></p>
+      </div>
+      <div class="card">
+        <h3>Intermediate (MPC)</h3>
+        <p>Aditya Junior College, Amalapuram</p>
+        <p>Marks: <b>973</b> (2021 – 2023)</p>
+      </div>
+      <div class="card">
+        <h3>Secondary School (10th)</h3>
+        <p>Aditya (E.M) High School, Amalapuram</p>
+        <p>Marks: <b>589</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="profiles">
+    <h2>Profiles & Leadership</h2>
+    <div class="grid">
+      <div class="card"><a href="https://leetcode.com/u/23b01a12a0/" target="_blank">LeetCode</a></div>
+      <div class="card"><a href="https://www.hackerrank.com/profile/23b01a12a0" target="_blank">HackerRank</a></div>
+      <div class="card"><a href="https://www.codechef.com/users/m23b01a12a0" target="_blank">CodeChef</a></div>
+      <div class="card"><b>Vice President</b><br>Vishnu Psychology Department, SVECW</div>
+    </div>
+  </section>
+
+  
+
+  <section id="achievements">
+    <h2>Achievements & Certifications</h2>
+    <div class="grid">
+      <div class="card">🏆 1st Prize – SCI Challenge (Technova 2024)</div>
+      <div class="card">🥈 2nd Place – Failathon 2023 (Ideathon)</div>
+      <div class="card">📜 NPTEL – Software Project Management</div>
+      <div class="card">💡 Google Cloud Participation Badges</div>
+      <div class="card">🔥 LeetCode – 2×50‑Day + 100‑Day Badges</div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>📧 manchikantimanojna999@gmail.com</p>
+    <p>© 2026 Manchikanti Lakshmi Sruthi Manojna</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+    }
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+    }
+  </script>
+</body>
+</html>
